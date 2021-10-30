@@ -120,6 +120,20 @@ console.log(splitMe("This string will be turned in an array!"))
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+separateExercise("4 -Functions")
+
+const deleteOne = function (string, boolean){
+  if (boolean === true){
+    return string.slice(1, string.length +1)
+  }else if (boolean === false){
+    return string.slice(0, string.length-1 )
+  }else{
+    return "Second parameter should be a boolean!"
+  }
+ 
+}
+
+console.log(deleteOne("This string shoul be without first letter", false))
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
