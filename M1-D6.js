@@ -133,16 +133,37 @@ const deleteOne = function (string, boolean){
  
 }
 
-console.log(deleteOne("This string shoul be without first letter", false))
+console.log(deleteOne("This string should be without first letter", true))
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
+separateExercise("5 - Functions")
+
+const onlyLetters = function(string){
+  let inArray =string.split("")
+  let numbers = ["1","2","3","4","5","6","7","8","9"]
+  let result = []
+  for (i =0 ; i< inArray.length; i++){
+    for (x =0; x< numbers.length; x++){
+      if (inArray[i] !== numbers[x]){
+        continue   
+      }else{
+        result.push(inArray[i])
+      }
+      
+    }
+    }return result.join("")
+   
+  }
+console.log(onlyLetters("12ab"))
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
+
+
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
