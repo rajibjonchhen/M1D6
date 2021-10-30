@@ -8,22 +8,41 @@ ASSIGNMENT RULES
 - The solution must be pushed to the repository and be available for the tutors by the end of the day (5PM CET)
 - Complete as many exercises as you can
 */
-
+let separateExercise = function(number){
+  console.log(`\n------------Exercise ${number}\n`)
+}
 // JS Basics
 
 /* EXERCISE A
    Create a variable called test and assign a string value to it.
 */
+separateExercise(1)
 let test = "This is a string"
+
+console.log(test)
 /* EXERCISE B
     Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
 */
+separateExercise(2)
 let sum = 10 +20
+
+console.log(sum)
 
 /* EXERCISE C
     Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
 
+separateExercise(3)
+
+let getRandNumber = function(limit1){
+  let random = 0
+  for (i=0 ; random !== limit1; i++){
+    random =  Math.floor(Math.random() * 21)
+    return random
+    }
+  }
+let random = getRandNumber()
+console.log(getRandNumber())
 /* EXERCISE D
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
