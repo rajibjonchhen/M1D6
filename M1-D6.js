@@ -34,7 +34,7 @@ console.log(sum)
 
 separateExercise(3)
 
-let getRandNumber = function(limit1){
+const getRandNumber = function(limit1){
   let random = 0
   for (i=0 ; random !== limit1; i++){
     random =  Math.floor(Math.random() * 21)
@@ -84,7 +84,7 @@ console.log(me)
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
 separateExercise(" 1-Functions")
-let dice = function(){
+const dice = function(){
   result = Math.floor(Math.random()*6) + 1
   return result
 }
@@ -94,6 +94,15 @@ console.log(dice())
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
+separateExercise("2 - Functions")
+const whoIsBigger = function(no1, no2){
+  if (no1>no2){
+    return `Number ${no1} is bigger!`
+  }else{
+    return `Number ${no2} is bigger!`
+  }
+}
+console.log(whoIsBigger(6,4))
 
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
