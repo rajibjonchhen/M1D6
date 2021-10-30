@@ -194,14 +194,13 @@ console.log(isThisAnEmail("liketanasa@gmail.com"))
 
 separateExercise("7 --Functions")
 const whatDayIsIt = function(){
-  let days= {1: "Monday", 2:"Tuesday",3: "Wednesday",4:"Thursday",5: "Friday", 6:"Saturday", 7:"Sunday"}
-  date = new Date()
+  let days= {1: "Monday", 2:"Tuesday",3: "Wednesday",4:"Thursday",5: "Friday", 6:"Saturday", 0:"Sunday"}
+  let date = new Date()
   let whatDay = date.getDay()
   let nameOfTheDay = days[whatDay]
-  return nameOfTheDay
 
+return nameOfTheDay
 }
-
 console.log(whatDayIsIt())
 
 /* EXERCISE 8
