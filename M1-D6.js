@@ -42,10 +42,19 @@ let getRandNumber = function(limit1){
     }
   }
 let random = getRandNumber()
-console.log(getRandNumber())
+console.log(random)
 /* EXERCISE D
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
+separateExercise(4)
+let me = {
+  name : "Stefan",
+  surname : "Tanasa",
+  age : 27
+}
+
+console.log(me)
+
 
 /* EXERCISE E
     Write a piece of code for programmatically removing the age property from the previously create object.
