@@ -213,6 +213,18 @@ console.log(whatDayIsIt())
         values: [3, 3, 4]
     }
 */
+separateExercise("8 -- Functions")
+const rollTheDices=function (number){
+  let object = {sum: 0, values: []}
+  for (i =0; i <number; i++){
+    rolledDices = object.sum += dice()
+    object.values.push(rolledDices)
+  }
+  return  object
+}
+
+console.log(rollTheDices(3))
+
 
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
