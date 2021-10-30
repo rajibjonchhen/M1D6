@@ -162,7 +162,30 @@ console.log(onlyLetters("12ab"))
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
+separateExercise("6 - Functions")
+const isThisAnEmail = function(email){
+  let hasAddressSign = false
+  let hasDot = false
+  for (i = 0; i< email.length; i++){
+    if (email[i] === "@")
+    {
+      hasAddressSign = true
+      
+    }
+    if (email[i] === "."){
+      hasDot= true
+    }
+  }
+  if(hasDot === true && hasAddressSign === true){
+    return "It is a valid email address!"
+  }else{
+    return "It is NOT a valid email address!"
+  }}
 
+
+console.log(isThisAnEmail("liketanasagmail.com"))
+console.log(isThisAnEmail("liketanasa@gmailcom"))
+console.log(isThisAnEmail("liketanasa@gmail.com"))
 
 
 /* EXERCISE 7
