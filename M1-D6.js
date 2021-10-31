@@ -485,3 +485,10 @@ const oldestMovie = function(){
 }
 
 console.log(oldestMovie())
+
+arrayAndObjects(13)
+
+const countMovies = function(){
+  return `In the array are ${movies.length } movies`
+}
+console.log(countMovies())
