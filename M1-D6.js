@@ -229,6 +229,19 @@ console.log(rollTheDices(3))
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
+separateExercise(("9 -- Functions"))
+
+const howManyDays= function (inputDate){
+  let firstDate = inputDate.split("/")
+  let myBirthday = new Date(firstDate)
+  
+  let todayDate = new Date()
+  return Math.floor((todayDate - myBirthday)/ 8.64e+7)
+  }
+  
+  
+  
+  console.log(`It past ${howManyDays("2010/05/06")} days`)
 
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
