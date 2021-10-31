@@ -246,6 +246,19 @@ const howManyDays= function (inputDate){
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
+separateExercise("10 -- Functions")
+
+
+const isTodayMyBirthday = function(){
+if (todayDate.getDate() === 06 && todayDate.getMonth() === 05){
+return "Today is your birthday! LET'S PARTY!!!"
+}else{
+  return "Is not your birthday yet! Get back to work :)! "
+}
+}
+
+console.log(isTodayMyBirthday())
+
 
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
