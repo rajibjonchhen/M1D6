@@ -263,11 +263,29 @@ console.log(isTodayMyBirthday())
 
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
-
+const arrayAndObjects = function(number){
+  console.log(`\nExercise ${number} -- JS Arrays & Objects\n`)
+}
 /* EXERCISE 11
    Write a function called deleteProp which receives an object and a string as parameters,
    and returns the given object after deleting its property named as the given string.
 */
+arrayAndObjects(11)
+
+const deleteProp = function (object, nameToDelete){
+ 
+   delete objectProp[nameToDelete]
+   
+   return object
+}
+
+objectProp = {
+  name: "The name of prop",
+  address: "North-London",
+  price: 200000
+}
+console.log(deleteProp(objectProp, "name"))
+
 
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
