@@ -468,3 +468,20 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
   },
 ];
+
+arrayAndObjects(12)
+
+const oldestMovie = function(){
+  let oldest = 2021
+  let nameOfTheOldest = ""
+  
+  for (i =0; i < movies.length; i++){
+    if (movies[i].Year < oldest){
+      oldest = movies[i].Year
+      nameOfTheOldest = movies[i].Title
+    }
+    
+  }return `The oldest movie is ${nameOfTheOldest} from ${oldest}` 
+}
+
+console.log(oldestMovie())
