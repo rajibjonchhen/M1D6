@@ -250,6 +250,7 @@ separateExercise("10 -- Functions")
 
 
 const isTodayMyBirthday = function(){
+  let todayDate = new Date()
 if (todayDate.getDate() === 06 && todayDate.getMonth() === 05){
 return "Today is your birthday! LET'S PARTY!!!"
 }else{
