@@ -472,6 +472,19 @@ console.log(onlyInThisMillennium())
     Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
 */
 
+arrayAndObjects(16)
+
+const getMovieById = function(idParameter){
+  for (i =0; i< movies.length; i++){
+    if (movies[i].imdbID === idParameter){
+      return movies[i]
+    }else{
+      
+    }
+  }return `None of the movies in the list have the id "${idParameter}"`
+}
+
+console.log(getMovieById("tt2395427"))
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
 */
