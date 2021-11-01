@@ -560,6 +560,15 @@ console.log(removeIndex(1))
   **
   ***
 */
+arrayAndObjects(21)
+const halfTree =function (number){
+  for (i=1; i< number; i++){
+    console.log("*".repeat(i))
+  }return "*".repeat(i)
+}
+
+console.log(halfTree(4))
+
 
 /* EXERCISE 22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
