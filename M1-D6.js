@@ -579,6 +579,23 @@ console.log(halfTree(4))
   *****
 */
 
+arrayAndObjects(22)
+
+let evenOrOddFct = function(n){
+let times = []
+i=0
+spaces=n
+while (times.length < n){
+  if (i% 2 === 0){
+    times.push(i)
+    i++
+    spaces--
+    console.log(" ".repeat(spaces) + "*".repeat(i))
+  }else{i++}
+  }
+}
+console.log(evenOrOddFct(5))
+
 /* EXERCISE 23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
