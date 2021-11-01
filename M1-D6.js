@@ -143,13 +143,11 @@ separateExercise("5 - Functions")
 
 const onlyLetters = function(string){
   let inArray =string.split("")
-  let numbers = ["1","2","3","4","5","6","7","8","9"]
+  let numbers = ["1","2","3","4","5","6","7","8","9", "0"]
   let result = []
   for (i =0 ; i< inArray.length; i++){
     for (x =0; x< numbers.length; x++){
       if (inArray[i] !== numbers[x]){
-        continue   
-      }else{
         result.push(inArray[i])
       }
       
@@ -592,13 +590,29 @@ while (times.length < n){
     spaces--
     console.log(" ".repeat(spaces) + "*".repeat(i))
   }else{i++}
-  }
+  }return ""
 }
 console.log(evenOrOddFct(5))
 
 /* EXERCISE 23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
+
+ // 6n -1 = number to check
+ //6n + = number to check
+
+arrayAndObjects(23)
+const isItPrime = function(numberToCheck){
+  if (numberToCheck === 2 || numberToCheck == 3){
+    return `${numberToCheck} is a prime number`
+    }
+  else if( (numberToCheck + 1) % 6 === 0 || (numberToCheck - 1) % 6 === 0 ){
+    return `${numberToCheck} is a prime number`
+  }else{
+    return `${numberToCheck} is NOT prime number`
+  }
+  }
+console.log(isItPrime(12))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
