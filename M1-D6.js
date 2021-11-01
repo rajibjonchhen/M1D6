@@ -518,6 +518,23 @@ console.log(searchByTitle("Lord of"))
     and another array unmatch with all the remaining ones.
 */
 
+
+arrayAndObjects(19)
+
+const searchAndDivide = function(stringPar){
+  
+  let foundTitles = []
+  let notFoundTitles = []
+  let objectToReturn = {match: foundTitles, unmatch: notFoundTitles}
+  for ( i =0 ; i<movies.length; i++){
+    if (movies[i].Title.indexOf(stringPar) !== -1){
+       foundTitles.push(movies[i].Title)
+    }else{
+      notFoundTitles.push(movies[i].Title)
+    }
+  }return objectToReturn
+}
+  console.log(searchAndDivide("Lord of"))
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
