@@ -492,3 +492,13 @@ const countMovies = function(){
   return `In the array are ${movies.length } movies`
 }
 console.log(countMovies())
+
+arrayAndObjects(14)
+const onlyTheTitles = function(){
+  let onlyTitles = []
+  for (i = 0; i < movies.length; i++){
+    onlyTitles.push(movies[i].Title)
+  }return onlyTitles
+}
+
+console.log(onlyTheTitles())
