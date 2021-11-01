@@ -538,7 +538,18 @@ const searchAndDivide = function(stringPar){
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
+arrayAndObjects(20)
+const removeIndex = function(numberIndex){
+  for (i =0; i< movies.length; i++){
+    if (i = numberIndex){
+      delete movies[numberIndex]
+    }
 
+    return movies
+    }
+  }
+
+console.log(removeIndex(1))
 // [EXTRAS] JS Advanced
 
 /* EXERCISE 21
