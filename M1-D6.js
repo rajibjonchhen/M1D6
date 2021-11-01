@@ -34,14 +34,9 @@ console.log(sum)
 
 separateExercise(3)
 
-const getRandNumber = function(limit1){
-  let random = 0
-  for (i=0 ; random !== limit1; i++){
-    random =  Math.floor(Math.random() * 21)
-    return random
-    }
-  }
-let random = getRandNumber()
+
+let  random =  Math.floor(Math.random() * 21)
+
 console.log(random)
 /* EXERCISE D
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
